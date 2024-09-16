@@ -9,7 +9,6 @@ arr.forEach(button => {
         else if (e.target.innerHTML === 'AC') expression = '';
         else if (e.target.innerHTML === 'DEL') expression = expression.slice(0, expression.length - 1);
         else expression += e.target.innerHTML;
-
         input.value = expression;
     })
 })
