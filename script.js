@@ -17,5 +17,5 @@ window.addEventListener("keydown", e => {
     if (e.key == 'Enter' || e.key == "=") expression = eval(expression)
     else if (e.key == 'Backspace') expression = expression.slice(0, expression.length - 1);
     else if (arr.some(btn => btn.innerText === e.key)) expression += e.key;
-    input.value = expression
+    input.value = expression;
 })
